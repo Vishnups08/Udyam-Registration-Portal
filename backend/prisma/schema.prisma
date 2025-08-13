@@ -1,0 +1,29 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model UdyamSubmission {
+  id               String   @id @default(cuid())
+  createdAt        DateTime @default(now())
+  aadhaarNumber    String
+  entrepreneurName String
+  consent          Boolean
+  otp              String
+  otpVerified      Boolean
+  organisationType String
+  panNumber        String
+  panHolderName    String
+  dob              String
+  panConsent       Boolean
+  pincode          String
+  state            String
+  city             String
+  status           String   @default("pending")
+
+  @@map("udyam_submissions")
+}

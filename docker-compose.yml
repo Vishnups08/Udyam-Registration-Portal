@@ -1,0 +1,38 @@
+version: "3.9"
+services:
+  db:
+    image: postgres:15
+    container_name: openbiz-postgres
+    environment:
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: openbiz
+    ports:
+      - "5433:5432"
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      PORT: 4000
+      DATABASE_URL: postgresql://postgres:root@db:5432/openbiz?schema=public
+    ports:
+      - "4000:4000"
+    depends_on:
+      - db
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    environment:
+      NEXT_PUBLIC_BACKEND_URL: http://localhost:4000
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+volumes:
+  dbdata: 

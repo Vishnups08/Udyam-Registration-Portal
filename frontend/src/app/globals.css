@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html, body {
+  height: 100%;
+}
+
+.container {
+    @apply w-full max-w-screen-xl mx-auto px-6; /* full width, centered, padded */
+  }
+  

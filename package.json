@@ -1,0 +1,19 @@
+{
+  "name": "openbiz",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "frontend",
+    "backend",
+    "scraper",
+    "schema"
+  ],
+  "scripts": {
+    "dev": "npm --workspace schema run build && concurrently -n frontend,backend -c blue,green \"npm --workspace frontend run dev\" \"npm --workspace backend run dev\"",
+    "build": "npm --workspace schema run build && npm --workspace frontend run build && npm --workspace backend run build",
+    "scrape": "npm --workspace scraper run scrape"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 
