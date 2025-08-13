@@ -4,24 +4,6 @@ A comprehensive, production-ready Udyam Registration Portal that replicates the 
 
 ![Udyam Portal](https://img.shields.io/badge/Status-Production%20Ready-brightgreen)
 ![Tech Stack](https://img.shields.io/badge/Tech%20Stack-Full%20Stack-blue)
-![License](https://img.shields.io/badge/License-ISC-blue)
-
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Project Structure](#project-structure)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Quick Start](#quick-start)
-- [Development](#development)
-- [API Documentation](#api-documentation)
-- [Database](#database)
-- [Testing](#testing)
-- [Deployment](#deployment)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## 🌟 Overview
 
@@ -98,35 +80,35 @@ The Udyam Registration Portal is a full-stack web application that provides a se
 
 ```
 openbiz/
-├── frontend/                 # Next.js frontend application
+├── frontend/                
 │   ├── src/
-│   │   ├── app/             # Next.js 13+ app directory
-│   │   │   ├── page.tsx     # Main Udyam registration form
-│   │   │   ├── layout.tsx   # Root layout component
-│   │   │   └── api/         # API routes (proxy to backend)
-│   │   └── globals.css      # Global styles with Tailwind
-│   ├── public/              # Static assets
-│   │   └── embleml.png      # Government emblem
-│   ├── package.json         # Frontend dependencies
-│   └── tailwind.config.js   # Tailwind configuration
-├── backend/                  # Express.js backend server
+│   │   ├── app/             
+│   │   │   ├── page.tsx     
+│   │   │   ├── layout.tsx   
+│   │   │   └── api/         
+│   │   └── globals.css      
+│   ├── public/              
+│   │   └── embleml.png      
+│   ├── package.json         
+│   └── tailwind.config.js   
+├── backend/                  
 │   ├── src/
-│   │   ├── server.ts        # Main server file
-│   │   ├── services/        # Business logic services
+│   │   ├── server.ts        
+│   │   ├── services/        
 │   │   │   └── validation.service.ts
-│   │   └── prisma/          # Database schema and migrations
-│   ├── test/                # Unit tests
-│   ├── package.json         # Backend dependencies
-│   └── API_DOCUMENTATION.md # API reference
-├── scraper/                  # Web scraping utilities
+│   │   └── prisma/          
+│   ├── test/                
+│   ├── package.json         
+│   └── API_DOCUMENTATION.md 
+├── scraper/                  
 │   ├── src/
-│   │   ├── scrape.ts        # Step 1 form scraper
-│   │   └── scrape-step2.ts  # Step 2 form scraper
-│   └── package.json         # Scraper dependencies
-├── schema/                   # Shared TypeScript schemas
-├── docker-compose.yml        # Docker services configuration
-├── package.json              # Root workspace configuration
-└── README.md                 # This file
+│   │   ├── scrape.ts        
+│   │   └── scrape-step2.ts  
+│   └── package.json         
+├── schema/                   
+├── docker-compose.yml        
+├── package.json              
+└── README.md                 
 ```
 
 ## 📋 Prerequisites
@@ -441,31 +423,4 @@ NEXT_PUBLIC_BACKEND_URL="https://api.yourdomain.com"
 
 ## 📄 License
 
-This project is licensed under the **ISC License** - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **Government of India**: For the Udyam portal design and requirements
-- **MSME Ministry**: For the registration process guidelines
-- **Open Source Community**: For the amazing tools and libraries used
-
-## 📞 Support
-
-### Issues and Questions
-- **GitHub Issues**: [Create an issue](https://github.com/Vishnups08/Udyam-Registration-Portal/issues)
-- **Documentation**: Check this README and API docs
-- **Community**: Join our discussions
-
-### Contact Information
-- **Developer**: Vishnups
-- **Repository**: [Udyam-Registration-Portal](https://github.com/Vishnups08/Udyam-Registration-Portal)
-
----
-
-<div align="center">
-
-**Made with ❤️ for the MSME Community**
-
-*Empowering small businesses through digital transformation*
-
-</div> 
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
