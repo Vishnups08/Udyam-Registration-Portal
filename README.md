@@ -5,9 +5,6 @@ A comprehensive, production-ready Udyam Registration Portal that replicates the 
 ![Udyam Portal](https://img.shields.io/badge/Status-Production%20Ready-brightgreen)
 ![Tech Stack](https://img.shields.io/badge/Tech%20Stack-Full%20Stack-blue)
 
-## Demo
-https://github.com/user-attachments/assets/af241a91-affd-4926-9ba9-03a129f69cd2
-
 ## 🌟 Overview
 
 The Udyam Registration Portal is a full-stack web application that provides a seamless, user-friendly interface for MSME (Micro, Small and Medium Enterprises) registration. Built with modern web technologies, it offers:
